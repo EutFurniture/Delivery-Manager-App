@@ -11,6 +11,12 @@ import AddDelivers from './components/dManager/pages/AddDelivers';
 import ManageCashOnDelivery from './components/dManager/pages/ManageCashOnDelivery';
 import ManageSchedule from './components/dManager/pages/ManageSchedule';
 import ManagePrioritize from './components/dManager/pages/ManagePrioritize';
+import DeliverInfoRoute from './components/dManager/pages/DeliverInfoRoute';
+import DeliverInfo from './components/dManager/pages/DeliverInfo';
+import DeliveryInfoRoute from './components/dManager/pages/DeliveryInfoRoute';
+import DeliveryInfo from './components/dManager/pages/DeliveryInfo';
+import CashOnDeliveryInfoRoute from './components/dManager/pages/CashOnDeliveryInfoRoute';
+import CashOnDeliveryInfo from './components/dManager/pages/CashOnDeliveryInfo';
 //import ManageReports from './components/dManager/pages/ManageReports';
 
 import Login from './components/Login';
@@ -41,6 +47,13 @@ function App() {
           <Route path='/dManager/pages/ManageCashOnDelivery' component={ManageCashOnDelivery}/>
           <Route path='/dManager/pages/ManageSchedule' component={ManageSchedule}/>
           <Route path='/dManager/pages/ManagePrioritize' component={ManagePrioritize}/>
+          <Route path='/dManager/pages/DeliverInfo' component={DeliverInfo}/>
+          <Route path='/DeliverInfoRoute' component={DeliverInfoRoute}/>
+          <Route path='/dManager/pages/DeliveryInfo' component={DeliveryInfo}/>
+          <Route path='/DeliveryInfoRoute' component={DeliveryInfoRoute}/>
+          <Route path='/dManager/pages/CashOnDeliveryInfo' component={CashOnDeliveryInfo}/>
+          <Route path='/CashOnDeliveryInfoRoute' component={CashOnDeliveryInfoRoute}/>
+
           {/*<Route path='/dManager/pages/ManageReports' component={ManageReports}/>*/}
 
           <Route path='/dPerson/pages/DpDashboard' component={DpDashboard}/>
