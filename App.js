@@ -17,18 +17,30 @@ import DeliveryInfoRoute from './components/dManager/pages/DeliveryInfoRoute';
 import DeliveryInfo from './components/dManager/pages/DeliveryInfo';
 import CashOnDeliveryInfoRoute from './components/dManager/pages/CashOnDeliveryInfoRoute';
 import CashOnDeliveryInfo from './components/dManager/pages/CashOnDeliveryInfo';
-//import ManageReports from './components/dManager/pages/ManageReports';
+import UpdateDelivery from './components/dManager/pages/UpdateDelivery';
+import UpdateDeliveryRoute from './components/dManager/pages/UpdateDeliveryRoute';
+import ManageReports from './components/dManager/pages/ManageReports';
+
+import EditPrioritizeOrders from './components/dManager/pages/EditPrioritizeOrders';
+import EditPrioritizeOrdersRoute from './components/dManager/pages/EditPrioritizeOrdersRoute';
+import UpdateCashOnDelivery from './components/dManager/pages/UpdateCashOnDelivery';
+import UpdateCashOnDeliveryRoute from './components/dManager/pages/UpdateCashOnDeliveryRoute';
+import UpdateReturnItem from './components/dManager/pages/UpdateReturnItem';
+import UpdateReturnItemRoute from './components/dManager/pages/UpdateReturnItemRoute';
+import EditDelivers from './components/dManager/pages/EditDelivers';
+import EditDeliversRoute from './components/dManager/pages/EditDeliversRoute';
+
 
 import Login from './components/Login';
 
-import DpDashboard from './components/dPerson/pages/DpDashboard';
-import AddReturnedItem from './components/dPerson/pages/AddReturnedItem';
-import ViewAvailableDelivery from './components/dPerson/pages/ViewAvailableDelivery';
-import ConfirmCashPay from './components/dPerson/pages/ConfirmCashPay';
-import ConfirmDelivery from './components/dPerson/pages/ConfirmDelivery';
-import AddForm from './components/dPerson/pages/AddForm';
-import Maps from './components/dPerson/pages/Maps';
-import EditReturn from './components/dPerson/pages/EditReturn';
+//import DpDashboard from './components/dPerson/pages/DpDashboard';
+//import AddReturnedItem from './components/dPerson/pages/AddReturnedItem';
+//import ViewAvailableDelivery from './components/dPerson/pages/ViewAvailableDelivery';
+//import ConfirmCashPay from './components/dPerson/pages/ConfirmCashPay';
+//import ConfirmDelivery from './components/dPerson/pages/ConfirmDelivery';
+//import AddForm from './components/dPerson/pages/AddForm';
+//import Maps from './components/dPerson/pages/Maps';
+//import EditReturn from './components/dPerson/pages/EditReturn';
 
 function App() {
   return (
@@ -53,17 +65,26 @@ function App() {
           <Route path='/DeliveryInfoRoute' component={DeliveryInfoRoute}/>
           <Route path='/dManager/pages/CashOnDeliveryInfo' component={CashOnDeliveryInfo}/>
           <Route path='/CashOnDeliveryInfoRoute' component={CashOnDeliveryInfoRoute}/>
+          <Route path='/dManager/pages/UpdateDelivery' component={UpdateDelivery}/>
+          <Route path='/UpdateDeliveryRoute' component={UpdateDeliveryRoute}/>
+          <Route path='/dManager/pages/EditPrioritizeOrders' component={EditPrioritizeOrders}/>
+          <Route path='/EditPrioritizeOrdersRoute' component={EditPrioritizeOrdersRoute}/>
+          <Route path='/dManager/pages/UpdateCashOnDelivery' component={UpdateCashOnDelivery}/>
+          <Route path='/UpdateCashOnDeliveryRoute' component={UpdateCashOnDeliveryRoute}/>
+          <Route path='/dManager/pages/UpdateReturnItem' component={UpdateReturnItem}/>
+          <Route path='/UpdateReturnItemRoute' component={UpdateReturnItemRoute}/>
+          <Route path='/dManager/pages/EditDelivers' component={EditDelivers}/>
+          <Route path='/EditDeliversRoute' component={EditDeliversRoute}/>
+          <Route path='/dManager/pages/ManageReports' component={ManageReports}/>
 
-          {/*<Route path='/dManager/pages/ManageReports' component={ManageReports}/>*/}
-
-          <Route path='/dPerson/pages/DpDashboard' component={DpDashboard}/>
+          {/*<Route path='/dPerson/pages/DpDashboard' component={DpDashboard}/>
           <Route path='/dPerson/pages/ViewAvailableDelivery' component={ViewAvailableDelivery}/>  
           <Route path='/dPerson/pages/AddReturnedItem' component={AddReturnedItem}/>
           <Route path='/dPerson/pages/ConfirmCashPay' component={ConfirmCashPay}/>
           <Route path='/dPerson/pages/ConfirmDelivery' component={ConfirmDelivery}/>
           <Route path='/dPerson/pages/AddForm' component={AddForm}/>
           <Route path='/dPerson/pages/EditReturn' component={EditReturn}/>
-          <Route path='/dPerson/pages/Maps' component={Maps}/>
+          <Route path='/dPerson/pages/Maps' component={Maps}/>*/}
 
 
 
