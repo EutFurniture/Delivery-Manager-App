@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+
 import './App.css';
 import Dashboard from './components/dManager/pages/Dashboard';
 import ManageDelivery from './components/dManager/pages/ManageDelivery';
@@ -20,7 +21,6 @@ import CashOnDeliveryInfo from './components/dManager/pages/CashOnDeliveryInfo';
 import UpdateDelivery from './components/dManager/pages/UpdateDelivery';
 import UpdateDeliveryRoute from './components/dManager/pages/UpdateDeliveryRoute';
 import ManageReports from './components/dManager/pages/ManageReports';
-
 import EditPrioritizeOrders from './components/dManager/pages/EditPrioritizeOrders';
 import EditPrioritizeOrdersRoute from './components/dManager/pages/EditPrioritizeOrdersRoute';
 import UpdateCashOnDelivery from './components/dManager/pages/UpdateCashOnDelivery';
@@ -29,10 +29,11 @@ import UpdateReturnItem from './components/dManager/pages/UpdateReturnItem';
 import UpdateReturnItemRoute from './components/dManager/pages/UpdateReturnItemRoute';
 import EditDelivers from './components/dManager/pages/EditDelivers';
 import EditDeliversRoute from './components/dManager/pages/EditDeliversRoute';
-
+import ManageProfile from './components/dManager/pages/ManageProfile';
+import EditProfileRoute from './components/dManager/pages/EditProfileRoute';
+import EditProfile from './components/dManager/pages/EditProfile';
 
 import Login from './components/Login';
-
 //import DpDashboard from './components/dPerson/pages/DpDashboard';
 //import AddReturnedItem from './components/dPerson/pages/AddReturnedItem';
 //import ViewAvailableDelivery from './components/dPerson/pages/ViewAvailableDelivery';
@@ -50,6 +51,7 @@ function App() {
       
           <Route path='/' exact component={Login}/>
           
+          <Route path='/dManager/pages/ManageProfile' component={ManageProfile}/>
           <Route path='/dManager/pages/Dashboard'  component={Dashboard}/>
           <Route path='/dManager/pages/ManageDelivery' component={ManageDelivery}/>
           <Route path='/dManager/pages/ManageDelivers' component={ManageDelivers}/>
@@ -76,6 +78,8 @@ function App() {
           <Route path='/dManager/pages/EditDelivers' component={EditDelivers}/>
           <Route path='/EditDeliversRoute' component={EditDeliversRoute}/>
           <Route path='/dManager/pages/ManageReports' component={ManageReports}/>
+          <Route path='/EditProfileRoute' component={EditProfileRoute}/>
+          <Route path='/dManager/pages/EditProfile' component={EditProfile}/>
 
           {/*<Route path='/dPerson/pages/DpDashboard' component={DpDashboard}/>
           <Route path='/dPerson/pages/ViewAvailableDelivery' component={ViewAvailableDelivery}/>  
